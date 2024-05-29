@@ -1,7 +1,3 @@
-
-
-
-
 .App {
   text-align: center;
   background-color: #282c34; /* Цвет фона */
@@ -39,16 +35,6 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
 /* App.css */
 
 body {
@@ -71,23 +57,25 @@ body {
 
 
 .thumbnail {
-  width: 20vw; /* 20% ширины экрана */
+  width: 20vw;
   height: auto;
 }
 
 
 .modal-content {
+  animation: jumpOut 0.5s ease;
   text-align: left;
   padding: 5px;
   border-radius: 8px;
-  max-width: 800px; /* Ограничиваем максимальную ширину модального окна */
-  width: 80%; /* Устанавливаем ширину в 80% от размера экрана */
-  margin: 0 auto; /* Центрируем модальное окно по горизонтали */
-  max-height: 80vh; /* Ограничиваем максимальную высоту модального окна */
-  overflow: auto; /* Добавляем прокрутку в случае большого описания */
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  max-height: 80vh;
+  overflow: auto;
   display: flex;
-  flex-direction: column; /* Отображаем содержимое в столбец */
-  justify-content: flex-start; /* Выравниваем содержимое вверху */
+  flex-direction: column;
+  justify-content: flex-start;
+  /* /* animation: fadeIn 0.2s linear forwards; */
 }
 
 .modal-img {
@@ -96,7 +84,6 @@ body {
   max-width: 100%; /* Определяем максимальную ширину картинки */
   max-height: 60vh; /* Определяем максимальную высоту картинки */
   margin-bottom: 20px;
-  /* margin-right: 20px; Внешний отступ между изображением и текстом */
   border-radius: 10px;
 }
 
@@ -142,18 +129,6 @@ body {
   text-align: center;
 }
 
-/* Анимация появления содержимого модального окна */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px); /* Движение вверх при появлении */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 button {
   padding: 0;
   border : none;
@@ -178,4 +153,40 @@ button {
 /* При наведении курсора на бегающий ползунок */
 ::-webkit-scrollbar-thumb:hover {
   background: #888; /* Еще светлее заднего фона */
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Движение вверх при появлении */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes jumpOut {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
