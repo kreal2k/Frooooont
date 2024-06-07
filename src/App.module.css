@@ -1,9 +1,70 @@
 .App {
   text-align: center;
-  background-color: #282c34; /* Цвет фона */
-  color: rgb(255, 255, 255); /* Цвет текста */
+  background-color: #1e1f21;
+  color: rgb(255, 255, 255);
   padding: 20px;
+} 
+
+/* Обновленные стили для кнопки с изображением */
+.button {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #282c34;
+  margin: 15px;
 }
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.3s;
+  pointer-events: none;
+}
+
+.button:hover::before {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.thumbnail {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.2s ease;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.button:hover .tooltip {
+  opacity: 1;
+}
+
+/* Media-запрос для мобильных устройств */
+@media (max-width: 768px) {
+  .tooltip {
+    font-size: 0.7em;
+  }
+}
+
+
 
 .title {
   font-size: calc(10px + 2vmin);
@@ -20,45 +81,19 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
 
+html,
 body {
-  font-family: Lobster, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #f0f0f0;
   padding: 0;
+  margin: 0;
   border : none;
+  height: 100%;
 }
-
-/* Кнопки */
-.button {
-  margin: 10px;
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  border-radius: 1000000000000000000000000000000000000000000px; /* Добавляем позиционирование для кнопок */
-  background-color: #282c34;
-}
-
-
-
-.thumbnail {
-  width: 20vw;
-  height: auto;
-}
-
 
 .modal-content {
   /* animation: jumpOut 0.5s ease; */
@@ -102,7 +137,7 @@ body {
 }
 
 .modal-link {
-  padding: 10px 20px;
+  padding: 11px 20px;
   font-size: 16px;
   background-color: #555;
   color: white;
@@ -128,7 +163,7 @@ body {
 }
 
 button {
-  padding: 0;
+  padding: 1px;
   border : none;
 }
 
