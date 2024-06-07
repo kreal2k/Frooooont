@@ -1,0 +1,39 @@
+/* Footer.module.css */
+.footer {
+    background-color: #2e3033;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box; /* Указываем, что padding входит в ширину элемента */
+}
+
+.footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h1 {
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.footer nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer nav ul li {
+    margin: 0 10px;
+}
+
+.footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}

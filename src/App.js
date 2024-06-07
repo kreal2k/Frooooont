@@ -13,6 +13,7 @@ import skripach from './images/skripach.jpg';
 import traktir from './images/traktir.jpg';
 
 import Header from './Header'; // Импортируем компонент Header
+import Footer from './footer';
 
 function MyApp() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -116,6 +117,7 @@ function MyApp() {
         </Modal>
 
       </div>
+      <Footer />
     </>
   );
 }
