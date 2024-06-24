@@ -97,7 +97,7 @@ body {
 
 .modal-content {
   /* animation: jumpOut 0.5s ease; */
-  text-align: left;
+  text-align: justify;
   padding: 5px;
   border-radius: 8px;
   max-width: 800px;
@@ -131,7 +131,7 @@ body {
   color: #fff;
   font-size: 14px;
   line-height: 1.5;
-  text-align: center;
+  text-align: justify;
   max-width: 100%; /* Ограничиваем максимальную ширину текста */
   margin: 0 auto; /* Центрируем текст */
 }
@@ -223,3 +223,4 @@ button {
     transform: scale(1);
   }
 }
+
