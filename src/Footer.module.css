@@ -2,7 +2,7 @@
 .footer {
     background-color: #2e3033;
     color: #fff;
-    padding: 20px;
+    padding: 2px;
     text-align: center;
     width: 100%;
     box-sizing: border-box; /* Указываем, что padding входит в ширину элемента */
@@ -15,6 +15,7 @@
 
 .footer h1 {
     margin-bottom: 20px;
+    background-color: #2e3033;
 }
 
 .footer p {

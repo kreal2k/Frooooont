@@ -224,3 +224,8 @@ button {
   }
 }
 
+@import url('./fonts.css');
+
+.myText {
+  font-family: 'Bruh', sans-serif;
+}

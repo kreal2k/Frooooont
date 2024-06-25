@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
+
+import './globalStyles.css'
 import styles from './App.module.css';
 
 import evstig from './images/evstig.jpg';
@@ -15,7 +17,7 @@ import traktir from './images/traktir.jpg';
 import Header from './Header'; // Импортируем компонент Header
 import Footer from './footer';
 
-function MyApp() {
+function App() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [modalImage, setModalImage] = useState('');
   const [modalDescription, setModalDescription] = useState('');
@@ -122,4 +124,4 @@ function MyApp() {
   );
 }
 
-export default MyApp;
+export default App;

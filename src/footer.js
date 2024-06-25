@@ -10,7 +10,6 @@ function Footer() {
                 <a href="https://t.me/kreal2k" target='_blank'>prod by kreal2k</a>
                 <nav>
                     <ul>
-                        <li><a href="#about">О проекте</a></li>
                         <li><a href="https://yandex.ru/maps/47/nizhny-novgorod/geo/bolshaya_pokrovskaya_ulitsa/8003255/?ll=43.995227%2C56.318437&z=15.8" target='_blank'>Скульптуры</a></li>
                         <li><a href="https://www.nntu.ru/" target='_blank'>Контакты</a></li>
                     </ul>
