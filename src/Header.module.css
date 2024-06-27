@@ -33,7 +33,7 @@
         letter-spacing: 2px; 
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         background: rgba(0, 0, 0, 0);
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(7px);
         border-radius: 10px;
     }
 
@@ -43,7 +43,7 @@
         color: rgba(255, 255, 255, 0.8);
         animation: fadeIn 2s; /* Анимация при первой загрузке */
         background: rgba(0, 0, 0, 0);
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(7px);
         border-radius: 10px;
     }
 
