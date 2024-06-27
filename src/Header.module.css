@@ -32,33 +32,33 @@
         text-transform: uppercase; 
         letter-spacing: 2px; 
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-        background: rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(10px);
+        background: rgba(0, 0, 0, 0);
+        backdrop-filter: blur(4px);
         border-radius: 10px;
     }
 
     .additionalText {
-        font-size: 1.5rem;
+        font-size: 2rem;
         line-height: 1.5;
         color: rgba(255, 255, 255, 0.8);
         animation: fadeIn 2s; /* Анимация при первой загрузке */
-        background: rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(10px);
+        background: rgba(0, 0, 0, 0);
+        backdrop-filter: blur(4px);
         border-radius: 10px;
     }
 
     .scroll-down {
         color: #fff;
-        font-size: 48px;
+        font-size: 68px;
         cursor: pointer;
         z-index: 10;
         text-decoration: none;
         transition: transform 0.2s;
         position: relative;
         align-self: center;
-        top: -6rem;
+        top: -8rem;
         animation: bounce 1s ease 1s forwards; /* Анимация при первой загрузке */
-    }    
+    } 
 
     .scroll-down:hover {
         transform: translateY(5px);
